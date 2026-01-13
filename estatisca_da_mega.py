@@ -1,0 +1,102 @@
+# -*- encoding: utf-8 -*-
+
+from pandas import *
+import numpy as np
+
+
+class EstatisticaMega:
+    def __init__(self):
+        self.numeros = []
+        self.colunas = {}
+        self.linhas = {}
+        self.contagem = object
+
+    def lerArquivoCsv(self, local):
+        df = read_csv(local, delimiter=',', header=None)
+
+        for index, row in df.iterrows():
+            self.linhas[f'{index}'] = []
+            for i in range(0, 5):
+                self.linhas[f'{index}'].append(row[i])
+
+    def lerArquivoXlsx(self, local):
+        self.linhas = {}
+        df = read_excel(local, engine='openpyxl')
+        df = df.replace({np.nan: None})
+
+        self.colunas = {}
+
+        for i in range(1, 7):
+            self.colunas[f'Bola{i}'] = dict(df[f'Bola{i}'].value_counts().sort_index())
+
+        for index, row in df.iterrows():
+            self.linhas[f'{index}'] = []
+            for i in range(1, 7):
+                self.linhas[f'{index}'].append(row[f'Bola{i}'])
+                self.numeros.append(row[f'Bola{i}'])
+
+        series = Series(self.numeros)
+
+        self.contagem = series.value_counts().sort_index()
+
+if __name__ == '__main__':
+    clsEstatisticaMega = EstatisticaMega()
+
+    clsEstatisticaMega.lerArquivoCsv('./jogos.csv')
+    linhaApostada = clsEstatisticaMega.linhas
+
+    clsEstatisticaMega.lerArquivoXlsx('./Mega-Sena.xlsx')
+    linhaSorteada = clsEstatisticaMega.linhas
+
+    with open('./outputEstatisticaPorBolaMega.txt', 'w') as f:
+        for i in clsEstatisticaMega.colunas:
+            for j in clsEstatisticaMega.colunas[i]:
+                f.write(f'{i}; dezena {int(j)}; quantidade de vezes na {i} {clsEstatisticaMega.colunas[i][j]}\n')
+
+    pontos = 0
+    dezenas = []
+    with (open('./outputPontosPorConcurso.txt', 'w') as f):
+        for i in linhaSorteada:
+            for j in linhaApostada:
+                for lS in linhaSorteada[i]:
+                    for lA in linhaApostada[j]:
+                        if lS is not None:
+                            if int(lS) == int(lA):
+                                dezenas.append(int(lS))
+                                pontos += 1
+
+                apostador = ''
+                match int(j):
+                    case x if x in [0,1,2,3,4,5,6,7,8,9]:
+                        apostador = ('Ricardo')
+                    case x if x in [10,11,12,13,14,15,16,17,18,19]:
+                        apostador = ('Hugo')
+                    case x if x in [20,21,22,23,24,25,26,27,28,29]:
+                        apostador = ('Sergio')
+                    case x if x in [30,31,32,33,34,35,36,37,38,39]:
+                        apostador = ('Cleide')
+                    case x if x in [40,41,42,43,44,45,46,47,48,49]:
+                        apostador = ('Helio')
+                    case x if x in [50,51,52,53,54,55,56,57,58,59]:
+                        apostador = ('Luiz')
+                    case x if x in [60,61,62,63,64,65,66,67,68,69]:
+                        apostador = ('Carolinda')
+                    case x if x in [70,71,72,73,74,75,76,77,78,79]:
+                        apostador = ('Leticia')
+                    case x if x in [80,81,82,83,84,85,86,87,88,89]:
+                        apostador = ('Vinicius')
+                    case x if x in [90,91,92,93,94,95,96,97,98,99]:
+                        apostador = ('Michael')
+                    case x if x >= 100:
+                        apostador = ('Sidnei')
+
+                if pontos >= 2: # Só registrar apostas com 2 ou mais acertos, e vc pode parametrizar isso aqui
+                    f.write(f'Concurso {(int(i) + 1)} - Aposta {int(j) + 1} - Pontos: {pontos} - Apostador: {apostador} - Números:{str(dezenas)}\n')
+
+                pontos = 0
+                dezenas = []
+
+    with open(f'./outputEstatisticaMega.txt', 'w') as f:
+        f.write('Número - Quantidade de vezes sorteado\n')
+        for numero, quantidade in clsEstatisticaMega.contagem.items():
+            f.write(f'{numero:.0f} - {quantidade:.0f}\n')
