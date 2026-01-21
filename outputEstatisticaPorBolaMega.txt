@@ -1,283 +1,285 @@
-Bola1; dezena 1; quantidade de vezes na Bola1 288
-Bola1; dezena 2; quantidade de vezes na Bola1 269
-Bola1; dezena 3; quantidade de vezes na Bola1 226
-Bola1; dezena 4; quantidade de vezes na Bola1 248
-Bola1; dezena 5; quantidade de vezes na Bola1 215
-Bola1; dezena 6; quantidade de vezes na Bola1 182
-Bola1; dezena 7; quantidade de vezes na Bola1 179
-Bola1; dezena 8; quantidade de vezes na Bola1 165
-Bola1; dezena 9; quantidade de vezes na Bola1 144
-Bola1; dezena 10; quantidade de vezes na Bola1 157
-Bola1; dezena 11; quantidade de vezes na Bola1 106
-Bola1; dezena 12; quantidade de vezes na Bola1 95
-Bola1; dezena 13; quantidade de vezes na Bola1 79
-Bola1; dezena 14; quantidade de vezes na Bola1 79
-Bola1; dezena 15; quantidade de vezes na Bola1 67
-Bola1; dezena 16; quantidade de vezes na Bola1 60
-Bola1; dezena 17; quantidade de vezes na Bola1 63
-Bola1; dezena 18; quantidade de vezes na Bola1 38
-Bola1; dezena 19; quantidade de vezes na Bola1 42
-Bola1; dezena 20; quantidade de vezes na Bola1 46
-Bola1; dezena 21; quantidade de vezes na Bola1 28
-Bola1; dezena 22; quantidade de vezes na Bola1 27
-Bola1; dezena 23; quantidade de vezes na Bola1 29
-Bola1; dezena 24; quantidade de vezes na Bola1 17
-Bola1; dezena 25; quantidade de vezes na Bola1 22
-Bola1; dezena 26; quantidade de vezes na Bola1 16
-Bola1; dezena 27; quantidade de vezes na Bola1 12
-Bola1; dezena 28; quantidade de vezes na Bola1 12
-Bola1; dezena 29; quantidade de vezes na Bola1 11
-Bola1; dezena 30; quantidade de vezes na Bola1 7
-Bola1; dezena 31; quantidade de vezes na Bola1 7
-Bola1; dezena 32; quantidade de vezes na Bola1 3
-Bola1; dezena 33; quantidade de vezes na Bola1 5
-Bola1; dezena 34; quantidade de vezes na Bola1 2
-Bola1; dezena 35; quantidade de vezes na Bola1 3
-Bola1; dezena 36; quantidade de vezes na Bola1 1
-Bola1; dezena 37; quantidade de vezes na Bola1 1
-Bola1; dezena 38; quantidade de vezes na Bola1 1
-Bola1; dezena 39; quantidade de vezes na Bola1 1
-Bola1; dezena 41; quantidade de vezes na Bola1 2
-Bola1; dezena 43; quantidade de vezes na Bola1 1
-Bola1; dezena 46; quantidade de vezes na Bola1 1
-Bola1; dezena 50; quantidade de vezes na Bola1 1
-Bola2; dezena 2; quantidade de vezes na Bola2 26
-Bola2; dezena 3; quantidade de vezes na Bola2 45
-Bola2; dezena 4; quantidade de vezes na Bola2 62
-Bola2; dezena 5; quantidade de vezes na Bola2 94
-Bola2; dezena 6; quantidade de vezes na Bola2 99
-Bola2; dezena 7; quantidade de vezes na Bola2 75
-Bola2; dezena 8; quantidade de vezes na Bola2 107
-Bola2; dezena 9; quantidade de vezes na Bola2 114
-Bola2; dezena 10; quantidade de vezes na Bola2 138
-Bola2; dezena 11; quantidade de vezes na Bola2 136
-Bola2; dezena 12; quantidade de vezes na Bola2 122
-Bola2; dezena 13; quantidade de vezes na Bola2 148
-Bola2; dezena 14; quantidade de vezes na Bola2 110
-Bola2; dezena 15; quantidade de vezes na Bola2 114
-Bola2; dezena 16; quantidade de vezes na Bola2 143
-Bola2; dezena 17; quantidade de vezes na Bola2 120
-Bola2; dezena 18; quantidade de vezes na Bola2 122
-Bola2; dezena 19; quantidade de vezes na Bola2 95
-Bola2; dezena 20; quantidade de vezes na Bola2 96
-Bola2; dezena 21; quantidade de vezes na Bola2 76
-Bola2; dezena 22; quantidade de vezes na Bola2 81
-Bola2; dezena 23; quantidade de vezes na Bola2 105
-Bola2; dezena 24; quantidade de vezes na Bola2 80
-Bola2; dezena 25; quantidade de vezes na Bola2 67
-Bola2; dezena 26; quantidade de vezes na Bola2 55
-Bola2; dezena 27; quantidade de vezes na Bola2 93
-Bola2; dezena 28; quantidade de vezes na Bola2 56
-Bola2; dezena 29; quantidade de vezes na Bola2 56
-Bola2; dezena 30; quantidade de vezes na Bola2 45
-Bola2; dezena 31; quantidade de vezes na Bola2 43
-Bola2; dezena 32; quantidade de vezes na Bola2 37
-Bola2; dezena 33; quantidade de vezes na Bola2 34
-Bola2; dezena 34; quantidade de vezes na Bola2 18
-Bola2; dezena 35; quantidade de vezes na Bola2 22
-Bola2; dezena 36; quantidade de vezes na Bola2 26
-Bola2; dezena 37; quantidade de vezes na Bola2 25
-Bola2; dezena 38; quantidade de vezes na Bola2 12
-Bola2; dezena 39; quantidade de vezes na Bola2 8
-Bola2; dezena 40; quantidade de vezes na Bola2 16
-Bola2; dezena 41; quantidade de vezes na Bola2 10
-Bola2; dezena 42; quantidade de vezes na Bola2 4
-Bola2; dezena 43; quantidade de vezes na Bola2 5
-Bola2; dezena 44; quantidade de vezes na Bola2 7
-Bola2; dezena 45; quantidade de vezes na Bola2 3
-Bola2; dezena 46; quantidade de vezes na Bola2 1
-Bola2; dezena 47; quantidade de vezes na Bola2 3
-Bola2; dezena 48; quantidade de vezes na Bola2 2
-Bola2; dezena 50; quantidade de vezes na Bola2 1
-Bola2; dezena 51; quantidade de vezes na Bola2 1
-Bola3; dezena 3; quantidade de vezes na Bola3 2
-Bola3; dezena 4; quantidade de vezes na Bola3 4
-Bola3; dezena 5; quantidade de vezes na Bola3 13
-Bola3; dezena 6; quantidade de vezes na Bola3 13
-Bola3; dezena 7; quantidade de vezes na Bola3 22
-Bola3; dezena 8; quantidade de vezes na Bola3 19
-Bola3; dezena 9; quantidade de vezes na Bola3 22
-Bola3; dezena 10; quantidade de vezes na Bola3 43
-Bola3; dezena 11; quantidade de vezes na Bola3 60
-Bola3; dezena 12; quantidade de vezes na Bola3 52
-Bola3; dezena 13; quantidade de vezes na Bola3 64
-Bola3; dezena 14; quantidade de vezes na Bola3 82
-Bola3; dezena 15; quantidade de vezes na Bola3 64
-Bola3; dezena 16; quantidade de vezes na Bola3 79
-Bola3; dezena 17; quantidade de vezes na Bola3 98
-Bola3; dezena 18; quantidade de vezes na Bola3 80
-Bola3; dezena 19; quantidade de vezes na Bola3 105
-Bola3; dezena 20; quantidade de vezes na Bola3 92
-Bola3; dezena 21; quantidade de vezes na Bola3 86
-Bola3; dezena 22; quantidade de vezes na Bola3 87
-Bola3; dezena 23; quantidade de vezes na Bola3 111
-Bola3; dezena 24; quantidade de vezes na Bola3 116
-Bola3; dezena 25; quantidade de vezes na Bola3 101
-Bola3; dezena 26; quantidade de vezes na Bola3 94
-Bola3; dezena 27; quantidade de vezes na Bola3 92
-Bola3; dezena 28; quantidade de vezes na Bola3 121
-Bola3; dezena 29; quantidade de vezes na Bola3 102
-Bola3; dezena 30; quantidade de vezes na Bola3 111
-Bola3; dezena 31; quantidade de vezes na Bola3 98
-Bola3; dezena 32; quantidade de vezes na Bola3 102
-Bola3; dezena 33; quantidade de vezes na Bola3 82
-Bola3; dezena 34; quantidade de vezes na Bola3 103
-Bola3; dezena 35; quantidade de vezes na Bola3 73
-Bola3; dezena 36; quantidade de vezes na Bola3 68
-Bola3; dezena 37; quantidade de vezes na Bola3 73
-Bola3; dezena 38; quantidade de vezes na Bola3 66
-Bola3; dezena 39; quantidade de vezes na Bola3 50
-Bola3; dezena 40; quantidade de vezes na Bola3 48
-Bola3; dezena 41; quantidade de vezes na Bola3 33
-Bola3; dezena 42; quantidade de vezes na Bola3 45
-Bola3; dezena 43; quantidade de vezes na Bola3 37
-Bola3; dezena 44; quantidade de vezes na Bola3 33
-Bola3; dezena 45; quantidade de vezes na Bola3 28
-Bola3; dezena 46; quantidade de vezes na Bola3 22
-Bola3; dezena 47; quantidade de vezes na Bola3 16
-Bola3; dezena 48; quantidade de vezes na Bola3 12
-Bola3; dezena 49; quantidade de vezes na Bola3 9
-Bola3; dezena 50; quantidade de vezes na Bola3 12
-Bola3; dezena 51; quantidade de vezes na Bola3 4
-Bola3; dezena 52; quantidade de vezes na Bola3 3
-Bola3; dezena 53; quantidade de vezes na Bola3 3
-Bola3; dezena 54; quantidade de vezes na Bola3 2
-Bola3; dezena 56; quantidade de vezes na Bola3 1
-Bola4; dezena 7; quantidade de vezes na Bola4 1
-Bola4; dezena 8; quantidade de vezes na Bola4 2
-Bola4; dezena 9; quantidade de vezes na Bola4 3
-Bola4; dezena 10; quantidade de vezes na Bola4 8
-Bola4; dezena 11; quantidade de vezes na Bola4 7
-Bola4; dezena 12; quantidade de vezes na Bola4 9
-Bola4; dezena 13; quantidade de vezes na Bola4 14
-Bola4; dezena 14; quantidade de vezes na Bola4 16
-Bola4; dezena 15; quantidade de vezes na Bola4 17
-Bola4; dezena 16; quantidade de vezes na Bola4 22
-Bola4; dezena 17; quantidade de vezes na Bola4 27
-Bola4; dezena 18; quantidade de vezes na Bola4 38
-Bola4; dezena 19; quantidade de vezes na Bola4 40
-Bola4; dezena 20; quantidade de vezes na Bola4 43
-Bola4; dezena 21; quantidade de vezes na Bola4 46
-Bola4; dezena 22; quantidade de vezes na Bola4 49
-Bola4; dezena 23; quantidade de vezes na Bola4 46
-Bola4; dezena 24; quantidade de vezes na Bola4 71
-Bola4; dezena 25; quantidade de vezes na Bola4 77
-Bola4; dezena 26; quantidade de vezes na Bola4 61
-Bola4; dezena 27; quantidade de vezes na Bola4 83
-Bola4; dezena 28; quantidade de vezes na Bola4 74
-Bola4; dezena 29; quantidade de vezes na Bola4 86
-Bola4; dezena 30; quantidade de vezes na Bola4 97
-Bola4; dezena 31; quantidade de vezes na Bola4 79
-Bola4; dezena 32; quantidade de vezes na Bola4 106
-Bola4; dezena 33; quantidade de vezes na Bola4 117
-Bola4; dezena 34; quantidade de vezes na Bola4 119
-Bola4; dezena 35; quantidade de vezes na Bola4 123
-Bola4; dezena 36; quantidade de vezes na Bola4 103
-Bola4; dezena 37; quantidade de vezes na Bola4 125
-Bola4; dezena 38; quantidade de vezes na Bola4 112
-Bola4; dezena 39; quantidade de vezes na Bola4 113
-Bola4; dezena 40; quantidade de vezes na Bola4 103
-Bola4; dezena 41; quantidade de vezes na Bola4 115
-Bola4; dezena 42; quantidade de vezes na Bola4 90
-Bola4; dezena 43; quantidade de vezes na Bola4 94
-Bola4; dezena 44; quantidade de vezes na Bola4 97
-Bola4; dezena 45; quantidade de vezes na Bola4 64
-Bola4; dezena 46; quantidade de vezes na Bola4 94
-Bola4; dezena 47; quantidade de vezes na Bola4 72
-Bola4; dezena 48; quantidade de vezes na Bola4 42
-Bola4; dezena 49; quantidade de vezes na Bola4 45
-Bola4; dezena 50; quantidade de vezes na Bola4 46
-Bola4; dezena 51; quantidade de vezes na Bola4 35
-Bola4; dezena 52; quantidade de vezes na Bola4 36
-Bola4; dezena 53; quantidade de vezes na Bola4 30
-Bola4; dezena 54; quantidade de vezes na Bola4 28
-Bola4; dezena 55; quantidade de vezes na Bola4 14
-Bola4; dezena 56; quantidade de vezes na Bola4 9
-Bola4; dezena 57; quantidade de vezes na Bola4 8
-Bola4; dezena 58; quantidade de vezes na Bola4 2
-Bola5; dezena 11; quantidade de vezes na Bola5 2
-Bola5; dezena 12; quantidade de vezes na Bola5 1
-Bola5; dezena 14; quantidade de vezes na Bola5 1
-Bola5; dezena 15; quantidade de vezes na Bola5 2
-Bola5; dezena 16; quantidade de vezes na Bola5 1
-Bola5; dezena 17; quantidade de vezes na Bola5 4
-Bola5; dezena 18; quantidade de vezes na Bola5 4
-Bola5; dezena 19; quantidade de vezes na Bola5 6
-Bola5; dezena 20; quantidade de vezes na Bola5 11
-Bola5; dezena 21; quantidade de vezes na Bola5 12
-Bola5; dezena 22; quantidade de vezes na Bola5 17
-Bola5; dezena 23; quantidade de vezes na Bola5 18
-Bola5; dezena 24; quantidade de vezes na Bola5 11
-Bola5; dezena 25; quantidade de vezes na Bola5 24
-Bola5; dezena 26; quantidade de vezes na Bola5 16
-Bola5; dezena 27; quantidade de vezes na Bola5 28
-Bola5; dezena 28; quantidade de vezes na Bola5 34
-Bola5; dezena 29; quantidade de vezes na Bola5 33
-Bola5; dezena 30; quantidade de vezes na Bola5 45
-Bola5; dezena 31; quantidade de vezes na Bola5 41
-Bola5; dezena 32; quantidade de vezes na Bola5 54
-Bola5; dezena 33; quantidade de vezes na Bola5 68
-Bola5; dezena 34; quantidade de vezes na Bola5 60
-Bola5; dezena 35; quantidade de vezes na Bola5 70
-Bola5; dezena 36; quantidade de vezes na Bola5 83
-Bola5; dezena 37; quantidade de vezes na Bola5 72
-Bola5; dezena 38; quantidade de vezes na Bola5 98
-Bola5; dezena 39; quantidade de vezes na Bola5 84
-Bola5; dezena 40; quantidade de vezes na Bola5 91
-Bola5; dezena 41; quantidade de vezes na Bola5 112
-Bola5; dezena 42; quantidade de vezes na Bola5 131
-Bola5; dezena 43; quantidade de vezes na Bola5 126
-Bola5; dezena 44; quantidade de vezes na Bola5 108
-Bola5; dezena 45; quantidade de vezes na Bola5 127
-Bola5; dezena 46; quantidade de vezes na Bola5 134
-Bola5; dezena 47; quantidade de vezes na Bola5 109
-Bola5; dezena 48; quantidade de vezes na Bola5 117
-Bola5; dezena 49; quantidade de vezes na Bola5 124
-Bola5; dezena 50; quantidade de vezes na Bola5 109
-Bola5; dezena 51; quantidade de vezes na Bola5 129
-Bola5; dezena 52; quantidade de vezes na Bola5 120
-Bola5; dezena 53; quantidade de vezes na Bola5 125
-Bola5; dezena 54; quantidade de vezes na Bola5 93
-Bola5; dezena 55; quantidade de vezes na Bola5 83
-Bola5; dezena 56; quantidade de vezes na Bola5 77
-Bola5; dezena 57; quantidade de vezes na Bola5 72
-Bola5; dezena 58; quantidade de vezes na Bola5 46
-Bola5; dezena 59; quantidade de vezes na Bola5 25
-Bola6; dezena 22; quantidade de vezes na Bola6 2
-Bola6; dezena 24; quantidade de vezes na Bola6 2
-Bola6; dezena 25; quantidade de vezes na Bola6 3
-Bola6; dezena 26; quantidade de vezes na Bola6 1
-Bola6; dezena 27; quantidade de vezes na Bola6 4
-Bola6; dezena 28; quantidade de vezes na Bola6 7
-Bola6; dezena 29; quantidade de vezes na Bola6 6
-Bola6; dezena 30; quantidade de vezes na Bola6 7
-Bola6; dezena 31; quantidade de vezes na Bola6 6
-Bola6; dezena 32; quantidade de vezes na Bola6 11
-Bola6; dezena 33; quantidade de vezes na Bola6 11
-Bola6; dezena 34; quantidade de vezes na Bola6 18
-Bola6; dezena 35; quantidade de vezes na Bola6 20
-Bola6; dezena 36; quantidade de vezes na Bola6 19
-Bola6; dezena 37; quantidade de vezes na Bola6 26
-Bola6; dezena 38; quantidade de vezes na Bola6 27
-Bola6; dezena 39; quantidade de vezes na Bola6 28
-Bola6; dezena 40; quantidade de vezes na Bola6 21
-Bola6; dezena 41; quantidade de vezes na Bola6 33
-Bola6; dezena 42; quantidade de vezes na Bola6 42
-Bola6; dezena 43; quantidade de vezes na Bola6 46
-Bola6; dezena 44; quantidade de vezes na Bola6 65
-Bola6; dezena 45; quantidade de vezes na Bola6 67
-Bola6; dezena 46; quantidade de vezes na Bola6 57
-Bola6; dezena 47; quantidade de vezes na Bola6 82
-Bola6; dezena 48; quantidade de vezes na Bola6 104
-Bola6; dezena 49; quantidade de vezes na Bola6 123
-Bola6; dezena 50; quantidade de vezes na Bola6 121
-Bola6; dezena 51; quantidade de vezes na Bola6 132
-Bola6; dezena 52; quantidade de vezes na Bola6 140
-Bola6; dezena 53; quantidade de vezes na Bola6 178
-Bola6; dezena 54; quantidade de vezes na Bola6 187
-Bola6; dezena 55; quantidade de vezes na Bola6 158
-Bola6; dezena 56; quantidade de vezes na Bola6 223
-Bola6; dezena 57; quantidade de vezes na Bola6 203
-Bola6; dezena 58; quantidade de vezes na Bola6 234
-Bola6; dezena 59; quantidade de vezes na Bola6 261
-Bola6; dezena 60; quantidade de vezes na Bola6 283
+bola;dezena;quantidade de vezes
+Bola1;1;288
+Bola1;2;269
+Bola1;3;227
+Bola1;4;248
+Bola1;5;215
+Bola1;6;183
+Bola1;7;179
+Bola1;8;165
+Bola1;9;144
+Bola1;10;158
+Bola1;11;106
+Bola1;12;95
+Bola1;13;79
+Bola1;14;79
+Bola1;15;67
+Bola1;16;60
+Bola1;17;63
+Bola1;18;39
+Bola1;19;42
+Bola1;20;46
+Bola1;21;28
+Bola1;22;27
+Bola1;23;29
+Bola1;24;17
+Bola1;25;22
+Bola1;26;16
+Bola1;27;12
+Bola1;28;12
+Bola1;29;11
+Bola1;30;7
+Bola1;31;7
+Bola1;32;3
+Bola1;33;5
+Bola1;34;2
+Bola1;35;3
+Bola1;36;1
+Bola1;37;1
+Bola1;38;1
+Bola1;39;1
+Bola1;41;2
+Bola1;43;1
+Bola1;46;1
+Bola1;50;1
+Bola2;2;26
+Bola2;3;45
+Bola2;4;62
+Bola2;5;94
+Bola2;6;99
+Bola2;7;75
+Bola2;8;107
+Bola2;9;114
+Bola2;10;138
+Bola2;11;136
+Bola2;12;122
+Bola2;13;150
+Bola2;14;110
+Bola2;15;114
+Bola2;16;143
+Bola2;17;120
+Bola2;18;122
+Bola2;19;95
+Bola2;20;96
+Bola2;21;76
+Bola2;22;81
+Bola2;23;105
+Bola2;24;80
+Bola2;25;67
+Bola2;26;56
+Bola2;27;93
+Bola2;28;56
+Bola2;29;57
+Bola2;30;45
+Bola2;31;43
+Bola2;32;37
+Bola2;33;34
+Bola2;34;18
+Bola2;35;22
+Bola2;36;26
+Bola2;37;25
+Bola2;38;12
+Bola2;39;8
+Bola2;40;16
+Bola2;41;10
+Bola2;42;4
+Bola2;43;5
+Bola2;44;7
+Bola2;45;3
+Bola2;46;1
+Bola2;47;3
+Bola2;48;2
+Bola2;50;1
+Bola2;51;1
+Bola3;3;2
+Bola3;4;4
+Bola3;5;13
+Bola3;6;13
+Bola3;7;22
+Bola3;8;19
+Bola3;9;22
+Bola3;10;43
+Bola3;11;60
+Bola3;12;52
+Bola3;13;64
+Bola3;14;82
+Bola3;15;65
+Bola3;16;79
+Bola3;17;98
+Bola3;18;80
+Bola3;19;105
+Bola3;20;92
+Bola3;21;86
+Bola3;22;87
+Bola3;23;111
+Bola3;24;116
+Bola3;25;101
+Bola3;26;94
+Bola3;27;92
+Bola3;28;121
+Bola3;29;102
+Bola3;30;111
+Bola3;31;98
+Bola3;32;102
+Bola3;33;83
+Bola3;34;103
+Bola3;35;74
+Bola3;36;68
+Bola3;37;73
+Bola3;38;66
+Bola3;39;50
+Bola3;40;48
+Bola3;41;33
+Bola3;42;45
+Bola3;43;37
+Bola3;44;33
+Bola3;45;28
+Bola3;46;22
+Bola3;47;16
+Bola3;48;12
+Bola3;49;9
+Bola3;50;12
+Bola3;51;4
+Bola3;52;3
+Bola3;53;3
+Bola3;54;2
+Bola3;55;1
+Bola3;56;1
+Bola4;7;1
+Bola4;8;2
+Bola4;9;3
+Bola4;10;8
+Bola4;11;7
+Bola4;12;9
+Bola4;13;14
+Bola4;14;16
+Bola4;15;17
+Bola4;16;23
+Bola4;17;27
+Bola4;18;38
+Bola4;19;40
+Bola4;20;43
+Bola4;21;46
+Bola4;22;49
+Bola4;23;46
+Bola4;24;71
+Bola4;25;77
+Bola4;26;61
+Bola4;27;83
+Bola4;28;74
+Bola4;29;86
+Bola4;30;97
+Bola4;31;79
+Bola4;32;106
+Bola4;33;117
+Bola4;34;119
+Bola4;35;123
+Bola4;36;103
+Bola4;37;125
+Bola4;38;113
+Bola4;39;113
+Bola4;40;103
+Bola4;41;116
+Bola4;42;90
+Bola4;43;94
+Bola4;44;97
+Bola4;45;64
+Bola4;46;94
+Bola4;47;72
+Bola4;48;42
+Bola4;49;45
+Bola4;50;46
+Bola4;51;35
+Bola4;52;36
+Bola4;53;30
+Bola4;54;28
+Bola4;55;14
+Bola4;56;10
+Bola4;57;8
+Bola4;58;2
+Bola5;11;2
+Bola5;12;1
+Bola5;14;1
+Bola5;15;2
+Bola5;16;1
+Bola5;17;4
+Bola5;18;4
+Bola5;19;6
+Bola5;20;11
+Bola5;21;12
+Bola5;22;17
+Bola5;23;18
+Bola5;24;11
+Bola5;25;24
+Bola5;26;16
+Bola5;27;28
+Bola5;28;34
+Bola5;29;33
+Bola5;30;45
+Bola5;31;41
+Bola5;32;54
+Bola5;33;68
+Bola5;34;60
+Bola5;35;70
+Bola5;36;83
+Bola5;37;72
+Bola5;38;98
+Bola5;39;84
+Bola5;40;91
+Bola5;41;112
+Bola5;42;131
+Bola5;43;126
+Bola5;44;109
+Bola5;45;127
+Bola5;46;135
+Bola5;47;109
+Bola5;48;117
+Bola5;49;124
+Bola5;50;109
+Bola5;51;129
+Bola5;52;120
+Bola5;53;126
+Bola5;54;93
+Bola5;55;83
+Bola5;56;77
+Bola5;57;72
+Bola5;58;46
+Bola5;59;26
+Bola6;22;2
+Bola6;24;2
+Bola6;25;3
+Bola6;26;1
+Bola6;27;4
+Bola6;28;7
+Bola6;29;6
+Bola6;30;7
+Bola6;31;6
+Bola6;32;11
+Bola6;33;11
+Bola6;34;18
+Bola6;35;20
+Bola6;36;19
+Bola6;37;26
+Bola6;38;27
+Bola6;39;28
+Bola6;40;21
+Bola6;41;33
+Bola6;42;42
+Bola6;43;46
+Bola6;44;65
+Bola6;45;68
+Bola6;46;57
+Bola6;47;83
+Bola6;48;104
+Bola6;49;123
+Bola6;50;121
+Bola6;51;132
+Bola6;52;140
+Bola6;53;178
+Bola6;54;187
+Bola6;55;158
+Bola6;56;224
+Bola6;57;203
+Bola6;58;234
+Bola6;59;261
+Bola6;60;284

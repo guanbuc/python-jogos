@@ -4,7 +4,11 @@ import pymupdf # imports the library
 import pytesseract
 from PIL import Image
 import io
+import os
 
+
+def main():
+    extract_file_pdf()
 
 def extract_text_with_ocr(pdf_path):
     """
@@ -35,11 +39,14 @@ def extract_text_with_ocr(pdf_path):
 
     return all_text
 
-pdf_file = './JOGOS_REALIZADOS.pdf'
+def extract_file_pdf():
+    for i in os.listdir(os.getcwd()):
+        if i.endswith('.pdf'):
+            # Optional: Save the extracted text to a file
+            with open(f'{i.split(".")[0]}.txt', 'w', encoding='utf-8') as f:
+                f.write(extract_text_with_ocr(i))
 
-extracted_content = extract_text_with_ocr(pdf_file)
-print(extracted_content)
 
-# Optional: Save the extracted text to a file
-with open("output.txt", "w", encoding="utf-8") as f:
-    f.write(extracted_content)
+if __name__ == '__main__':
+    main()
+
