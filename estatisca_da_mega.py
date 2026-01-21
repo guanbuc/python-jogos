@@ -11,15 +11,16 @@ class EstatisticaMega:
         self.linhas = {}
         self.contagem = object
 
-    def lerArquivoCsv(self, local):
-        df = read_csv(local, delimiter=',', header=None)
+    def contCsv(self, local):
+        df = read_csv(local, delimiter=',')
 
         for index, row in df.iterrows():
-            self.linhas[f'{index}'] = []
-            for i in range(0, 5):
-                self.linhas[f'{index}'].append(row[i])
+            print(row['jogador'])
+            self.linhas[f'{row['jogador']}'] = []
+            for i in range(1, 6):
+                self.linhas[f'{row['jogador']}'].append(row[f'bola{i}'])
 
-    def lerArquivoXlsx(self, local):
+    def contXlsx(self, local):
         self.linhas = {}
         df = read_excel(local, engine='openpyxl')
         df = df.replace({np.nan: None})
@@ -30,32 +31,56 @@ class EstatisticaMega:
             self.colunas[f'Bola{i}'] = dict(df[f'Bola{i}'].value_counts().sort_index())
 
         for index, row in df.iterrows():
-            self.linhas[f'{index}'] = []
+            self.linhas[f'{row['Concurso']}'] = []
             for i in range(1, 7):
-                self.linhas[f'{index}'].append(row[f'Bola{i}'])
+                self.linhas[f'{row['Concurso']}'].append(row[f'Bola{i}'])
                 self.numeros.append(row[f'Bola{i}'])
 
         series = Series(self.numeros)
 
         self.contagem = series.value_counts().sort_index()
 
-if __name__ == '__main__':
-    clsEstatisticaMega = EstatisticaMega()
 
-    clsEstatisticaMega.lerArquivoCsv('./jogos.csv')
-    linhaApostada = clsEstatisticaMega.linhas
 
-    clsEstatisticaMega.lerArquivoXlsx('./Mega-Sena.xlsx')
-    linhaSorteada = clsEstatisticaMega.linhas
+clsEstatisticaMega = EstatisticaMega()
+
+def lerArquivoCsv(arquivo):
+    clsEstatisticaMega.contCsv(arquivo)
+    return clsEstatisticaMega.linhas
+
+def lerArquivoXlsx(arquivo):
+    clsEstatisticaMega.contXlsx(arquivo)
+    return clsEstatisticaMega.linhas
+
+
+def EstatisticaPorBolaMega():
+    lerArquivoXlsx('./Mega-Sena.xlsx')
 
     with open('./outputEstatisticaPorBolaMega.txt', 'w') as f:
+        f.write(f'bola;dezena;quantidade de vezes\n')
+
+    with open('./outputEstatisticaPorBolaMega.txt', 'a') as f:
         for i in clsEstatisticaMega.colunas:
             for j in clsEstatisticaMega.colunas[i]:
-                f.write(f'{i}; dezena {int(j)}; quantidade de vezes na {i} {clsEstatisticaMega.colunas[i][j]}\n')
+                f.write(f'{i};{int(j)};{clsEstatisticaMega.colunas[i][j]}\n')
+
+def EstatisticaPorVezesDeDezena():
+    with open(f'./outputEstatisticaMega.txt', 'w') as f:
+        f.write('Número;Quantidade de vezes sorteado\n')
+        for numero, quantidade in clsEstatisticaMega.contagem.items():
+            f.write(f'{numero:.0f};{quantidade:.0f}\n')
+
+def EstatisticaPorApostaJogador():
+    lerArquivoCsv('./jogos.csv')
+    linhaApostada = clsEstatisticaMega.linhas
+
+    lerArquivoXlsx('./Mega-Sena.xlsx')
+    linhaSorteada = clsEstatisticaMega.linhas
 
     pontos = 0
     dezenas = []
-    with (open('./outputPontosPorConcurso.txt', 'w') as f):
+    with open('./outputPontosPorConcurso.txt', 'w') as f:
+        f.write(f'Concurso;Aposta;Pontos;Apostador;Números\n')
         for i in linhaSorteada:
             for j in linhaApostada:
                 for lS in linhaSorteada[i]:
@@ -91,12 +116,14 @@ if __name__ == '__main__':
                         apostador = ('Sidnei')
 
                 if pontos >= 2: # Só registrar apostas com 2 ou mais acertos, e vc pode parametrizar isso aqui
-                    f.write(f'Concurso {(int(i) + 1)} - Aposta {int(j) + 1} - Pontos: {pontos} - Apostador: {apostador} - Números:{str(dezenas)}\n')
+                    f.write(f'{(int(i) + 1)};{int(j) + 1};{pontos};{apostador};{str(dezenas)}\n')
 
                 pontos = 0
                 dezenas = []
 
-    with open(f'./outputEstatisticaMega.txt', 'w') as f:
-        f.write('Número - Quantidade de vezes sorteado\n')
-        for numero, quantidade in clsEstatisticaMega.contagem.items():
-            f.write(f'{numero:.0f} - {quantidade:.0f}\n')
+
+if __name__ == '__main__':
+    EstatisticaPorBolaMega()
+    EstatisticaPorVezesDeDezena()
+    lerArquivoCsv('./jogos.csv')
+    #EstatisticaPorApostaJogador()
