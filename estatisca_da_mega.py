@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-from pandas import *
+import pandas as pd
 import numpy as np
 
 
@@ -12,18 +12,26 @@ class EstatisticaMega:
         self.contagem = object
 
     def contCsv(self, local):
-        df = read_csv(local, delimiter=',', header=None)
+        # tenta utf-8 e faz fallback para latin-1 em caso de erro de decodificação
+        try:
+            df = pd.read_csv(local, delimiter=',', header=None, encoding='utf-8')
+        except UnicodeDecodeError:
+            df = pd.read_csv(local, delimiter=',', header=None, encoding='latin-1')
+        except Exception:
+            # último recurso: usar engine python e substituir erros
+            df = pd.read_csv(local, delimiter=',', header=None, engine='python', encoding='utf-8', on_bad_lines='skip')
+
         self.linhas = {}
 
         for index, row in df.iterrows():
             row = row.sort_values()
             self.linhas[f'{index}'] = []
             for i in range(0, 6):
-                self.linhas[f'{index}'].append(int(row.iloc[i]) if not isna(row.iloc[i]) else None)
+                self.linhas[f'{index}'].append(int(row.iloc[i]) if not pd.isna(row.iloc[i]) else None)
 
     def contXlsx(self, local):
         self.linhas = {}
-        df = read_excel(local, engine='openpyxl')
+        df = pd.read_excel(local, engine='openpyxl')
         df = df.replace({np.nan: None})
 
         self.colunas = {}
@@ -37,9 +45,9 @@ class EstatisticaMega:
                 self.linhas[f'{row['Concurso']}'].append(row[f'Bola{i}'])
                 self.numeros.append(row[f'Bola{i}'])
 
-        series = Series(self.numeros)
+        series = pd.Series(self.numeros)
 
-        self.contagem = series.value_counts().sort_index()
+        self.contagem = series.value_counts().sort_index() if not series.empty else pd.Series(dtype='int64')
 
 
 
@@ -57,16 +65,16 @@ def lerArquivoXlsx(arquivo):
 def EstatisticaPorBolaMega():
     lerArquivoXlsx('./Mega-Sena.xlsx')
 
-    with open('./outputEstatisticaPorBolaMega.txt', 'w') as f:
+    with open('./outputEstatisticaPorBolaMega.txt', 'w', encoding='utf-8', errors='replace') as f:
         f.write(f'bola;dezena;quantidade de vezes\n')
 
-    with open('./outputEstatisticaPorBolaMega.txt', 'a') as f:
+    with open('./outputEstatisticaPorBolaMega.txt', 'a', encoding='utf-8', errors='replace') as f:
         for i in clsEstatisticaMega.colunas:
             for j in clsEstatisticaMega.colunas[i]:
                 f.write(f'{i};{int(j)};{clsEstatisticaMega.colunas[i][j]}\n')
 
 def EstatisticaPorVezesDeDezena():
-    with open(f'./outputEstatisticaMega.txt', 'w') as f:
+    with open(f'./outputEstatisticaMega.txt', 'w', encoding='utf-8', errors='replace') as f:
         f.write('Número;Quantidade de vezes sorteado\n')
         for numero, quantidade in clsEstatisticaMega.contagem.items():
             f.write(f'{numero:.0f};{quantidade:.0f}\n')
@@ -80,7 +88,7 @@ def EstatisticaPorApostaJogador():
 
     pontos = 0
     dezenas = []
-    with open('./outputPontosPorConcursoPorJogador.txt', 'w') as f:
+    with open('./outputPontosPorConcursoPorJogador.txt', 'w', encoding='utf-8', errors='replace') as f:
         f.write(f'Concurso;Aposta;Pontos;Jogador;Números\n')
         for i in linhaSorteada:
             for j in linhaApostada:
