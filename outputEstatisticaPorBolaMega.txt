@@ -1,12 +1,12 @@
 bola;dezena;quantidade de vezes
-Bola1;1;293
+Bola1;1;294
 Bola1;2;270
 Bola1;3;232
 Bola1;4;250
 Bola1;5;215
 Bola1;6;190
 Bola1;7;181
-Bola1;8;166
+Bola1;8;167
 Bola1;9;145
 Bola1;10;159
 Bola1;11;106
@@ -50,7 +50,7 @@ Bola2;6;100
 Bola2;7;76
 Bola2;8;108
 Bola2;9;117
-Bola2;10;141
+Bola2;10;142
 Bola2;11;138
 Bola2;12;122
 Bola2;13;150
@@ -69,7 +69,7 @@ Bola2;25;67
 Bola2;26;56
 Bola2;27;95
 Bola2;28;56
-Bola2;29;57
+Bola2;29;58
 Bola2;30;45
 Bola2;31;43
 Bola2;32;38
@@ -111,7 +111,7 @@ Bola3;19;106
 Bola3;20;93
 Bola3;21;87
 Bola3;22;89
-Bola3;23;112
+Bola3;23;113
 Bola3;24;116
 Bola3;25;101
 Bola3;26;94
@@ -130,7 +130,7 @@ Bola3;38;67
 Bola3;39;51
 Bola3;40;48
 Bola3;41;34
-Bola3;42;45
+Bola3;42;46
 Bola3;43;37
 Bola3;44;33
 Bola3;45;28
@@ -169,7 +169,7 @@ Bola4;27;83
 Bola4;28;76
 Bola4;29;87
 Bola4;30;97
-Bola4;31;81
+Bola4;31;82
 Bola4;32;110
 Bola4;33;119
 Bola4;34;119
@@ -187,7 +187,7 @@ Bola4;45;64
 Bola4;46;96
 Bola4;47;73
 Bola4;48;42
-Bola4;49;45
+Bola4;49;46
 Bola4;50;46
 Bola4;51;35
 Bola4;52;36
@@ -225,7 +225,7 @@ Bola5;36;86
 Bola5;37;73
 Bola5;38;99
 Bola5;39;84
-Bola5;40;92
+Bola5;40;93
 Bola5;41;114
 Bola5;42;134
 Bola5;43;128
@@ -235,7 +235,7 @@ Bola5;46;137
 Bola5;47;110
 Bola5;48;117
 Bola5;49;126
-Bola5;50;110
+Bola5;50;111
 Bola5;51;129
 Bola5;52;120
 Bola5;53;127
@@ -277,9 +277,9 @@ Bola6;51;134
 Bola6;52;142
 Bola6;53;182
 Bola6;54;187
-Bola6;55;158
+Bola6;55;159
 Bola6;56;225
 Bola6;57;205
-Bola6;58;237
+Bola6;58;238
 Bola6;59;263
 Bola6;60;288
