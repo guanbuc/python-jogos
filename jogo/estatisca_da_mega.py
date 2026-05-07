@@ -11,6 +11,8 @@ class EstatisticaMega:
     def __init__(self):
         self.df = DataFrame
         self.contagem = None
+        self.porBolaPeriodoMM = []
+        self.porBolaPeriodoMMYY = []
         self.porPeriodoMM = []
         self.porPeriodoMMYY = []
         self.porCombinacoesMM = []
@@ -53,11 +55,13 @@ class EstatisticaMega:
     def contXlsx(self, local):
         self.linhas = {}
         self.colunas = {}
+        self.porBolaPeriodoMM = []
+        self.porBolaPeriodoMMYY = []
         self.porCombinacoesMM = []
         self.porCombinacoesMMYY = []
-        self.numeros = []
         self.porPeriodoMM = []
         self.porPeriodoMMYY = []
+        self.numeros = []
 
         self.df = pd.read_excel(local, engine='openpyxl')
         self.df = self.df.replace({np.nan: None})
@@ -76,12 +80,18 @@ class EstatisticaMega:
             self.colunas[f'Bola{i}'] = dict(self.df[f'Bola{i}'].value_counts().sort_index())
             self.dezenas[f'faixa_Bola{i}'] = dict(self.df[f'faixa_Bola{i}'].value_counts().sort_index())
 
-            contMMYY = self.df.groupby(['mes_ano', f'faixa_Bola{i}'])[f'faixa_Bola{i}'].count().reset_index(name=f'count_faixa_bola{i}')
-            contMM = self.df.groupby(['mes', f'faixa_Bola{i}'])[f'faixa_Bola{i}'].count().reset_index(name=f'count_faixa_bola{i}')
+            contBolaMM = self.df.groupby(['mes', f'Bola{i}'])[f'Bola{i}'].count().reset_index(name=f'count_MM_bola{i}')
+            contBolaMMYY = self.df.groupby(['mes_ano', f'Bola{i}'])[f'Bola{i}'].count().reset_index(name=f'count_MMYY_bola{i}')
+            contMMYY = self.df.groupby(['mes_ano', f'faixa_Bola{i}'])[f'faixa_Bola{i}'].count().reset_index(name=f'count_MMYY_faixa_bola{i}')
+            contMM = self.df.groupby(['mes', f'faixa_Bola{i}'])[f'faixa_Bola{i}'].count().reset_index(name=f'count_MM_faixa_bola{i}')
 
-            contMMYY[f'count_faixa_bola{i}'] = contMMYY[f'count_faixa_bola{i}'].astype('Int64')
-            contMM[f'count_faixa_bola{i}'] = contMM[f'count_faixa_bola{i}'].astype('Int64')
+            contBolaMM[f'count_MM_bola{i}'] = contBolaMM[f'count_MM_bola{i}'].astype('Int64')
+            contBolaMMYY[f'count_MMYY_bola{i}'] = contBolaMMYY[f'count_MMYY_bola{i}'].astype('Int64')
+            contMMYY[f'count_MMYY_faixa_bola{i}'] = contMMYY[f'count_MMYY_faixa_bola{i}'].astype('Int64')
+            contMM[f'count_MM_faixa_bola{i}'] = contMM[f'count_MM_faixa_bola{i}'].astype('Int64')
 
+            self.porBolaPeriodoMM.append(contBolaMM)
+            self.porBolaPeriodoMMYY.append(contBolaMMYY)
             self.porPeriodoMM.append(contMM)
             self.porPeriodoMMYY.append(contMMYY)
 
@@ -157,12 +167,26 @@ def EstatisticaPorFaixaPeriodoMesAno():
 
     nwDf.to_csv('./outputEstatisticaPorFaixaPeriodoMesAno.csv', index=False, encoding='utf-8')
 
+def EstatisticaPorBolaPeriodoMesAno():
+    nwDf = pd.concat(clsEstatisticaMega.porBolaPeriodoMMYY, ignore_index=True)
+
+    nwDf = nwDf.fillna(0).astype({col: int for col in nwDf.select_dtypes('float').columns})
+
+    nwDf.to_csv('./outputEstatisticaPorBolaPeriodoMesAno.csv', index=False, encoding='utf-8')
+
 def EstatisticaPorConjFaixaPeriodoMesAno():
     nwDf = pd.concat(clsEstatisticaMega.porCombinacoesMMYY, ignore_index=True)
 
     #nwDf = nwDf.fillna(0).astype({col: int for col in nwDf.select_dtypes('float').columns})
 
     nwDf.to_csv('./outputEstatisticaPorConjFaixaPeriodoMesAno.csv', index=False, encoding='utf-8')
+
+def EstatisticaPorBolaPeriodoMes():
+    nwDf = pd.concat(clsEstatisticaMega.porBolaPeriodoMM, ignore_index=True)
+
+    nwDf = nwDf.fillna(0).astype({col: int for col in nwDf.select_dtypes('float').columns})
+
+    nwDf.to_csv('./outputEstatisticaPorBolaPeriodoMes.csv', index=False, encoding='utf-8')
 
 def EstatisticaPorFaixaPeriodoMes():
     nwDf = pd.concat(clsEstatisticaMega.porPeriodoMM, ignore_index=True)
@@ -249,3 +273,5 @@ if __name__ == '__main__':
     EstatisticaPorConjFaixaPeriodoMesAno()
     EstatisticaPorFaixaPeriodoMes()
     EstatisticaPorConjFaixaPeriodoMes()
+    EstatisticaPorBolaPeriodoMes()
+    EstatisticaPorBolaPeriodoMesAno()
